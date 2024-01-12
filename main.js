@@ -3,10 +3,6 @@ fetch('trained-model.json')
   .then(trainedModel => {
     const network = new brain.recurrent.LSTM();
     network.fromJSON(trainedModel);
-
-    // Now you can use the network for predictions
-    const output = network.run('Some input');
-    console.log(output);
   });
 
 
