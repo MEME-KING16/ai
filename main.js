@@ -1,4 +1,4 @@
-fetch('file:///C:/Users/sebfi/Downloads/my%20gpt/trained-model.json')
+fetch('trained-model.json')
   .then(response => response.json())
   .then(trainedModel => {
     const network = new brain.recurrent.LSTM();
