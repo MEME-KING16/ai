@@ -1,7 +1,8 @@
+let network;
 fetch('trained-model.json')
   .then(response => response.json())
   .then(trainedModel => {
-    const network = new brain.recurrent.LSTM();
+    network = new brain.recurrent.LSTM();
     network.fromJSON(trainedModel);
   });
 
